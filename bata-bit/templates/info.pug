@@ -1,0 +1,37 @@
+section.exchange-container
+  img(src="./assets/imgs/bitcoin_logo.svg").exchange-container--bitcoin-img
+
+  .exchange-container--info
+    h2 Visibilizamos todas las tasas de cambio.
+    p Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
+  
+  section.main-table-container
+    h3.main-table-container--title Monedas
+    .main-currency-table
+      .main-currency-table--container
+        table
+          tr
+            td.main-currency-table--asset Bitcoin
+            td.main-currency-table--price
+              | $ 1.96
+              span.main-currency-table__ticker-down
+          tr
+            td.main-currency-table--asset Ethereum
+            td.main-currency-table--price
+              | $ 0.07
+              span.main-currency-table__ticker-up
+          tr
+            td.main-currency-table--asset Ripple
+            td.main-currency-table--price
+              | $ 2.15
+              span.main-currency-table__ticker-down
+          tr
+            td.main-currency-table--asset Stellar
+            td.main-currency-table--price
+              | $ 4.96
+              span.main-currency-table__ticker-down
+      .main-currency-table--arrow
+
+    .main-table-container--update
+      strong Actualizado: 
+      | 19 Julio 23:45

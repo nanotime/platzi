@@ -1,0 +1,23 @@
+doctype html
+html
+  include ../templates/head.pug
+  body
+    include ../templates/navbar.pug
+    section.login
+      .login__form-container
+        img.login__logo(src='../logos/logo_yard_sale.svg' alt='yard sale logo')
+
+        form.login__form(action='/')
+
+          label.login__input-label(for='email') Email Address
+
+          input#email.login__input(type='email' placeholder='user@mail.com')
+
+          label.login__input-label(for='password') Password
+
+          input#password.login__input(type='password' placeholder='*********')
+
+          button.button.button__primary(type='submit') Login
+          a.button.button__link(href='#') Forgot my password
+
+      a.login__signup-btn.button.button__ghost(href='#') Sign Up

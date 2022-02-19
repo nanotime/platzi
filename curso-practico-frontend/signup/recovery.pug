@@ -1,0 +1,22 @@
+doctype html
+html
+  include ../templates/head.pug
+  body
+    include ../templates/navbar.pug
+    section.login
+      .login__form-container
+        img.login__logo(src='../logos/logo_yard_sale.svg' alt='yard sale logo')
+
+        h1.title Password recovery
+
+        h4.title__low-emphasis Inform the email address used to create your account
+
+        form.login__form(action='/')
+
+          label.login__input-label(for='email') Email Address
+
+          input#email.login__input(type='email' placeholder='email@mail.com')
+
+          button.button.button__primary(type='submit') Submit
+
+          a.button.button__link(href='#') Back to login

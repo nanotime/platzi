@@ -1,0 +1,20 @@
+doctype html
+html
+  include ../templates/head.pug
+  body
+    include ../templates/navbar.pug
+    section.login
+      .login__form-container
+        img.login__logo(src='../logos/logo_yard_sale.svg' alt='yard sale logo')
+
+        h1.title Email has been sent!
+
+        h4.title__low-emphasis Please check your inbox for instructions on how to reset the password
+
+        img.login__email-logo(src='../logos/email-logo.svg' alt='yard sale logo')
+
+        button.button.button__primary(type='submit') Login
+
+        span.login__resend
+          | Didn&rsquo;t receive the email? 
+          a(href='#') Resend

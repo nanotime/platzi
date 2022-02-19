@@ -1,0 +1,19 @@
+{
+  "name": "bata-bit",
+  "version": "1.0.0",
+  "description": "Bata-bit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "landing"
+  ],
+  "author": "Javier Marin",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.3.1",
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1"
+  }
+}

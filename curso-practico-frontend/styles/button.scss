@@ -1,0 +1,36 @@
+.button {
+  border-radius: 8px;
+  border: none;
+  color: $white;
+  width: 100%;
+  cursor: pointer;
+  font-size: $md;
+  font-weight: bold;
+  height: 52px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__primary {
+    background-color: $hospital-green;
+    &:hover {
+      background-color: darken($hospital-green, 10%);
+    }
+  }
+
+  &__ghost {
+    border: 1px solid $hospital-green !important;
+    background-color: transparent;
+    color: $hospital-green;
+  }
+
+  &__link {
+    border: none;
+    background-color: transparent;
+    color: $hospital-green;
+    font-size: $sm;
+    font-weight: normal;
+  }
+}
