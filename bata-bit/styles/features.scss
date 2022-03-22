@@ -1,5 +1,76 @@
-.features-container {
+.features {
   background-color: $warn-black;
   width: 100%;
-  color: white;
+  color: $white; 
+  padding: 64px 0;
+  position: relative;
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: $white;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: $grey-2;
+    margin-top: 24px;
+  }
+
+  &--logo-separator {
+    background-image: url('../assets/logos/patata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 38px;
+    margin-left: 10px;
+    width: 66px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -20px;
+  }
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .feature, .feature:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.feature {
+  background-color: $warn-black-plus;
+  min-width: 288px;
+  max-width: 345px;
+  width: 288px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  padding: 12px;
+  text-align: left;
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    color: $white;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: $grey-2;
+    margin-top: 12px;
+  }
+
+  img {
+    margin-bottom: 12px;
+  }
 }
