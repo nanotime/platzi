@@ -6,7 +6,16 @@ $warn-black: #201E1C;
 $warn-black-plus: #282623;
 $grey: #BABABA;
 $grey-2: #808080;
+$grey-3: #757575;
 $off-white: #FAF8F7;
 $white: #fff;
 
 $bg-linear: linear-gradient(207.8deg, $warn-black 16.69%, $bitcoin-orange 100%);
+
+@mixin tablet {
+  @media (min-width: 720px) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 1023px) { @content }
+}

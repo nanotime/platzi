@@ -1,1 +1,22 @@
-section#plans.landing_section
+mixin card(label, title, price, message, buttonText)
+  article.card
+    if label
+      p.card__recomended=label
+    div.card__body
+      h3=title
+      p.body__price
+        span $
+        =price
+      p.body__message=message
+      button
+        =buttonText
+        span
+
+section#plans.main-plans-container
+  h2 Escoge el plan que mejor se ajuste a ti.
+  p.main-plans-container__subtitle Cualquier plan te da acceso completo a nuestra plataforma.
+
+  section.cards-container
+    +card('', 'Pago Mensual', '69', '*Ahorras $129 comparado al plan mensual', 'Escoger este')
+    +card('Recomendado', 'Pago Anual', '99', '*Ahorras $129 comparado al plan mensual', 'Escoger este')
+    +card('', 'Pago Trimestral', '89', '*Ahorras $129 comparado al plan mensual', 'Escoger este')

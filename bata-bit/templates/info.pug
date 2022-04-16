@@ -1,37 +1,58 @@
-section.exchange-container
-  img(src="./assets/imgs/bitcoin_logo.svg").exchange-container--bitcoin-img
+section.exchange
+  img(src="./assets/imgs/bitcoin_logo.svg").exchange--bitcoin-img
 
-  .exchange-container--info
+  .exchange__info
     h2 Visibilizamos todas las tasas de cambio.
     p Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
   
-  section.main-table-container
-    h3.main-table-container--title Monedas
-    .main-currency-table
-      .main-currency-table--container
+  section.exchange__data
+    .exchange__table-container
+      h3.exchange__table-container__title.exchange__table-container__title--orange Monedas
+      .exchange__table
         table
           tr
-            td.main-currency-table--asset Bitcoin
-            td.main-currency-table--price
+            td.exchange__table__asset Bitcoin
+            td.exchange__table__price
               | $ 1.96
-              span.main-currency-table__ticker-down
+              span.exchange__table__ticker-down
           tr
-            td.main-currency-table--asset Ethereum
-            td.main-currency-table--price
+            td.exchange__table__asset Ethereum
+            td.exchange__table__price
               | $ 0.07
-              span.main-currency-table__ticker-up
+              span.exchange__table__ticker-up
           tr
-            td.main-currency-table--asset Ripple
-            td.main-currency-table--price
+            td.exchange__table__asset Ripple
+            td.exchange__table__price
               | $ 2.15
-              span.main-currency-table__ticker-down
+              span.exchange__table__ticker-down
           tr
-            td.main-currency-table--asset Stellar
-            td.main-currency-table--price
+            td.exchange__table__asset Stellar
+            td.exchange__table__price
               | $ 4.96
-              span.main-currency-table__ticker-down
-      .main-currency-table--arrow
-
-    .main-table-container--update
-      strong Actualizado: 
-      | 19 Julio 23:45
+              span.exchange__table__ticker-down
+      .exchange__table-container__update.exchange__table-container__update--orange
+        | Valores 
+        strong en $ USD
+    .exchange__table-container
+      h3.exchange__table-container__title.exchange__table-container__title--blue Comisiones
+      .exchange__table
+        table
+          tr
+            td.exchange__table__asset Bitcoin
+            td.exchange__table__price
+              | $ 1.96
+          tr
+            td.exchange__table__asset Ethereum
+            td.exchange__table__price
+              | $ 0.07
+          tr
+            td.exchange__table__asset Ripple
+            td.exchange__table__price
+              | $ 2.15
+          tr
+            td.exchange__table__asset Stellar
+            td.exchange__table__price
+              | $ 4.96
+      .exchange__table-container__update.exchange__table-container__update--blue
+        | Valores 
+        strong en $ USD

@@ -1,0 +1,38 @@
+footer {
+  align-items: center;
+  background-color: $bitcoin-orange;
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  padding: 60px;
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-top: 8px;
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+  }
+
+  .footer-logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      color: $soft-orange;
+      font-size: 0.8rem;
+      line-height: 1.8rem;
+      margin-top: 8px;
+    }
+  }
+}

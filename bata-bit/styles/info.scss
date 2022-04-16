@@ -1,10 +1,10 @@
-.exchange-container {
+.exchange {
   width: 90%;
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
 
-  &--info {
+  &__info {
     margin-top: 40px;
 
     h2 {
@@ -16,56 +16,77 @@
 
     p {
       margin-top: 24px;
-      color: #757575;
+      color: $grey-3;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.8rem;
     }
   }
-}
 
-.main-table-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 32px;
+  &__data {
 
-  &--title {
-    color: $bitcoin-orange;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    margin-bottom: 12px;
-    text-align: left;
-    width: 70%;
+    @include tablet {
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    margin-top: 32px;
+    overflow-x: scroll;
+    padding-bottom: 30px;
   }
 
-  &--update {
-    background-color: $soft-orange;
-    padding: 7px;
-    border-radius: 8px;
-    margin: 28px 0;
-    color: $warn-black;
+  &__table-container {
+    display: flex;
+    flex-direction: column;
 
-    strong {
-      font-size: 1.2rem;
+    &__title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      line-height: 2.3rem;
+      margin-bottom: 12px;
+      text-align: left;
+
+      &--orange {
+        color: $bitcoin-orange;
+      }
+
+      &--blue {
+        color: $secondary-blue;
+      }
+    }
+
+    &__update {
+      width: 135px;
+      padding: 5px 2px;
+      border-radius: 8px;
+      margin: 16px auto;
+      color: $warn-black;
+  
+      strong {
+        font-size: 1.2rem;
+      }
+
+      &--orange {
+        background-color: $soft-orange;
+      }
+
+      &--blue {
+        background-color: $soft-blue;
+      }
     }
   }
-}
 
-.main-currency-table {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-
-  &--container {
+  &__table {
     min-width: 230px;
     max-width: 500px;
     height: 250px;
+    margin-bottom: 15px;
 
     table {
-      background-color: $white;  
+      background-color: $white;
       border-radius: 8px;
       color: $grey;
       font-size: 1.6rem;
@@ -74,46 +95,36 @@
       line-height: 1.9rem;
       width: 100%;
     }
-    
+
     td {
       width: 50%;
     }
-  }
 
-  &--price {
-    font-weight: normal;
-    color: #757575;
-  }
+    &__price {
+      font-weight: normal;
+      color: $grey-3;
+    }
 
-  &__ticker-down {
-    background-image: url('../assets/icons/trending-down-icon.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    height: 15px;
-    margin-left: 10px;
-    width: 15px;
-  }
+    &__ticker-down {
+      background-image: url('../assets/icons/trending-down-icon.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      height: 15px;
+      margin-left: 10px;
+      width: 15px;
+    }
 
-  &__ticker-up {
-    background-image: url('../assets/icons/trending-up-icon.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    height: 15px;
-    margin-left: 10px;
-    width: 15px;
-  }
-
-  &--arrow {
-    background-image: url('../assets/icons/chevron-right-icon.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10px;
-    margin-left: 10px;
-    width: 10px;
+    &__ticker-up {
+      background-image: url('../assets/icons/trending-up-icon.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      height: 15px;
+      margin-left: 10px;
+      width: 15px;
+    }
   }
 }

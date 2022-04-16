@@ -1,15 +1,15 @@
 .image-section {
-  width: 100%;
-  min-width: 320px;
-  height: 500px;
   background-image: url('../assets/imgs/bitcoinbaby.png');
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  min-width: 320px;
+  width: 100%;
 
   h2 {
-    font-size: 2.4rem;
     color: $white;
+    font-size: 2.4rem;
     padding-top: 68px;
   }
 }
