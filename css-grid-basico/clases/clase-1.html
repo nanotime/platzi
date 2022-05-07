@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.scss">
+  <title>Propiedades del contenedor</title>
+</head>
+<body>
+  <main>
+    <h1><a href="/">Volver atras</a></h1>
+    <div class="example example__container">
+      <h2 class="example__title">Grid simple</h2>
+      <p class="example__description">
+        Util para cuando tienes claro cuales serán las dimensiones de tu grid.
+      </p>
+      <div class="grid grid__container example__one">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+    </div>
+
+    <div class="example example__container">
+      <h2 class="example__title">Grids con auto-rows</h2>
+      <p class="example__description">
+        Va a definir un tamaño automatico para las filas de nuestro grid con un solo valor
+      </p>
+      <div class="grid grid__container example__two">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+    </div>
+
+    <div class="example example__container">
+      <h2 class="example__title">Grids auto-flow</h2>
+      <p class="example__description">
+        Modifica como se llena nuestro grid. En este caso definimos un tamaño para las tres primeras
+        columnas y luego se reordena para rellenar el espacio.
+      </p>
+      <div class="grid grid__container example__three">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+    </div>
+
+    <div class="example example__container">
+      <h2 class="example__title">Grids auto-flow</h2>
+      <p class="example__description">
+        Un ejemplo cambiando a template-rows y auto-colums.
+        <br>
+        En este caso estas definiendo dos columnas y que las filas se llenen automaticamente, y el auto-flow
+        indica que se debe llenar en orden de columnas.
+      </p>
+      <div class="grid grid__container example__four">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+    </div>
+
+    <div class="example example__container">
+      <h2 class="example__title">Grids con gap</h2>
+      <p class="example__description">
+        El gap define el espaciado entre los grid-items.
+        <br>
+        Puedes usar gap directamente para aplicarlo a filas y columnas o column/row-gap para un manejo granular
+      </p>
+      <div class="grid grid__container example__five">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+    </div>
+
+    <div class="example example__container">
+      <h2 class="example__title">Reto</h2>
+      <p class="example__description">
+        La solución es interesante dado que tienes que definir 3 filas y luego las columnas en automatico
+        para que todo quede como esperabas y luego definir que el flujo sea en columnas.
+      </p>
+      <div class="grid grid__container challenge">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

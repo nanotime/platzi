@@ -1,0 +1,15 @@
+{
+  "name": "css-grid-basico",
+  "version": "1.0.0",
+  "description": "Curso de css grid basico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Marin",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  }
+}
