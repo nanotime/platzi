@@ -17,6 +17,34 @@ main {
   display: flex;
 }
 
+.index {
+  width: 30%;
+}
+
+.index__title {
+  text-align: center;
+  color: #fff;
+  background-color: #83af9b;
+}
+
+.index__class-list {
+  text-align: center;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.index__class-item {
+  color: #fff;
+  background-color: #fe4365;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.index__class-item a {
+  color: #fff;
+  font-weight: bold;
+}
+
 .example {
   width: 30%;
   margin-bottom: 10px;
@@ -87,11 +115,62 @@ main {
   display: grid;
 }
 
-.challenge {
+.challenge-one {
   grid-auto-colums: 100px;
   grid-template-rows: 100px 100px 100px;
   grid-auto-flow: column;
   display: grid;
+}
+
+.alignment__one {
+  height: 600px;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  place-content: center;
+  gap: 15px;
+  display: grid;
+}
+
+.alignment__two {
+  height: 600px;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  place-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  display: grid;
+}
+
+.alignment__two .grid__item {
+  text-align: center;
+}
+
+.alignment__three {
+  height: 600px;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  place-content: center;
+  gap: 15px;
+  display: grid;
+}
+
+.alignment__three .grid__item:nth-child(3) {
+  place-self: center;
+  padding: 5px;
+}
+
+.alignment__challenge {
+  height: 600px;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 100px 100px;
+  place-content: center;
+  place-items: end;
+  gap: 15px;
+  display: grid;
+}
+
+.alignment__challenge .grid__item {
+  padding: 5px;
 }
 
 /*# sourceMappingURL=index.c7ea8ffa.css.map */

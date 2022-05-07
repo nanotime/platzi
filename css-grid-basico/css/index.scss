@@ -24,6 +24,33 @@ main {
   padding: 10px;
 }
 
+.index {
+  width: 30%;
+
+  &__title {
+    background-color: $ballons;
+    text-align: center;
+    color: white;
+  }
+
+  &__class-list {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__class-item {
+    margin-top: 5px;
+    padding: 2px;
+    background-color: $sugar;
+    color: white;
+    a {
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
 .example {
   width: 30%;
   margin-bottom: 10px;
@@ -96,9 +123,67 @@ main {
   gap: 5px;
 }
 
-.challenge {
+.challenge-one {
   display: grid;
   grid-template-rows: 100px 100px 100px;
   grid-auto-colums: 100px;
   grid-auto-flow: column;
+}
+
+// Clase 4
+
+.alignment__one {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  gap: 15px;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+}
+
+.alignment__two {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  gap: 15px;
+  height: 600px;
+  place-content: center;
+  align-items: flex-end;
+  justify-content: center;
+
+  .grid__item {
+    text-align: center;
+  }
+}
+
+.alignment__three {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  gap: 15px;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+  
+  .grid__item {
+    &:nth-child(3) {
+      place-self: center;
+      padding: 5px;
+    }
+  }
+}
+
+.alignment__challenge {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+  gap: 15px;
+  height: 600px;
+  place-content: center;
+  place-items: end;
+
+  .grid__item {
+    padding: 5px;
+  }
 }
