@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: DM Sans, sans-serif;
+}
+
+.hero {
+  width: 50%;
+  height: 200px;
+  display: flex;
+}
+
+.hero_img-section {
+  width: 100px;
+}
+
+.hero_img-section img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=project.aea91877.css.map */
